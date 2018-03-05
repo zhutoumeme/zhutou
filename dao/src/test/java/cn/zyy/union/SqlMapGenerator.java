@@ -16,8 +16,6 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 public class SqlMapGenerator {
     public static void main(String[] args) {
         String genConProp = "C:\\workspace\\union\\dao\\src\\main\\resources\\mybatis\\generatorConfig.xml";
-        System.out.println(new File(genConProp));
-
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
 
