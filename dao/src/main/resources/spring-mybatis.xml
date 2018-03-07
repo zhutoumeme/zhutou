@@ -37,7 +37,9 @@
 
     <!-- mybatis和spring完美整合，不需要mybatis的配置映射文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+      <!--注入数据库连接池-->
         <property name="dataSource" ref="dataSource"/>
+      <property name="configLocation" value="classpath:mybatis-config.xml"></property>
         <!-- 自动扫描mapping.xml文件 -->
         <property name="mapperLocations" value="classpath:mybatis/sqlmap/*.xml"></property>
     </bean>

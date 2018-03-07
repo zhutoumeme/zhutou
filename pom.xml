@@ -35,21 +35,25 @@
 
     <dependencies>
         <!-- 添加spring核心依赖 -->
+        <!--spring 核心包-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!--O/X MAPPER-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!--事务管理-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
@@ -60,11 +64,13 @@
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!-- SpringMVC -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!--包扫描-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -75,6 +81,7 @@
             <artifactId>spring-context-support</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!--切面编程-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
