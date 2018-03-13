@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>athena</module>
-        <module>dao</module>
     </modules>
 
     <properties>
