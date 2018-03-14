@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/athena/athena.iml" filepath="$PROJECT_DIR$/athena/athena.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/union.iml" filepath="$PROJECT_DIR$/union.iml" />
     </modules>
   </component>
 </project>
