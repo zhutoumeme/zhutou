@@ -4,11 +4,20 @@
   xmlns:context="http://www.springframework.org/schema/context"
   xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <!-- 加载配置参数 -->
   <import resource="classpath:spring/spring-mybatis.xml"/>
 
   <!-- 自动扫描 -->
+  <!-- 自动扫描组件，要把controller去除，他们是在spring-mvc.xml中配置，如果不去除会影响事务管理。 -->
+  <!--
+  由于服务器启动时的加载配置文件的顺序为web.xml-》-root-context.xml(Spring的配置文件)-》servlet-context.xml(SpringMVC的配置文件)，
+  由于 root-context.xml配置文件中Controller会先进行扫描装配，但是此时service还没有进行事务增强处理，得到的将是原样的Service（没有经过事务加强处理，故而没有事务处理能力）
+  ，所以我们必须在root-context.xml中不扫描Controller，配置如下：-->
   <context:component-scan base-package="cn.zyy.union">
     <context:exclude-filter type="annotation"
       expression="org.springframework.stereotype.Controller"/>
   </context:component-scan>
+
+  <bean id="springContextUtils" class="cn.zyy.union.utils.SpringContextUtils" lazy-init="false"/>
 </beans>
