@@ -1,6 +1,9 @@
 package cn.zyy.union.lock;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -10,7 +13,7 @@ public class FairAndUnfairTest {
   public static void main(String[] args) {
     FairAndUnfairTest fairAndUnfairTest = new FairAndUnfairTest();
     //fairAndUnfairTest.fair();
-   fairAndUnfairTest.unfair();
+    fairAndUnfairTest.unfair();
   }
 
   private static Lock unfairLock = new ReentrantLock2(false);
@@ -71,7 +74,9 @@ public class FairAndUnfairTest {
 
     @Override
     protected Collection<Thread> getQueuedThreads() {
-      return super.getQueuedThreads();
+      List<Thread> list = new ArrayList<>(super.getQueuedThreads());
+      Collections.reverse(list);
+      return list;
     }
   }
 }
