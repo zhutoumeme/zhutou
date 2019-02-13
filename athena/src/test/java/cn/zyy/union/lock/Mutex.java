@@ -1,9 +1,14 @@
 package cn.zyy.union.lock;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
+import org.apache.commons.lang3.StringUtils;
 
 public class Mutex implements Lock {
 
@@ -83,5 +88,12 @@ public class Mutex implements Lock {
 
   public boolean hasQueuedThreads() {
     return sync.hasQueuedThreads();
+  }
+
+  public static void main(String[] args) {
+    System.out.println(0&0x0000FFFF);
+    int i =0;
+    System.out.println(++i);
+    System.out.println(Integer.MAX_VALUE);
   }
 }
