@@ -1,4 +1,4 @@
-package cn.zyy.union.utils;
+package cn.cm.union.utils;
 
 public class User {
 

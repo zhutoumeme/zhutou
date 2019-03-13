@@ -1,4 +1,4 @@
-package cn.zyy.union.lock;
+package cn.cm.union.lock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;

@@ -1,4 +1,4 @@
-package cn.zyy.union.pojo;
+package cn.cm.union.pojo;
 
 /**
  *

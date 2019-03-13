@@ -1,7 +1,7 @@
-package cn.zyy.union.dao;
+package cn.cm.union.dao;
 
-import cn.zyy.union.pojo.UserInfo;
-import cn.zyy.union.pojo.UserInfoExample;
+import cn.cm.union.pojo.UserInfo;
+import cn.cm.union.pojo.UserInfoExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;

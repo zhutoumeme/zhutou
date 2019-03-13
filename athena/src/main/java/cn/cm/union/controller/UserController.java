@@ -1,4 +1,4 @@
-package cn.zyy.union.controller;
+package cn.cm.union.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

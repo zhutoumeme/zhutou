@@ -1,4 +1,4 @@
-package cn.zyy.union.jmm;
+package cn.cm.union.jmm;
 
 import java.util.ArrayList;
 import java.util.List;
