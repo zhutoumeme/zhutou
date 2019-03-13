@@ -1,6 +1,8 @@
-package cn.zyy.union.jmm;
+package cn.cm.union.jmm;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public final class ThreeStooges {
@@ -21,5 +23,8 @@ public final class ThreeStooges {
     ThreeStooges threeStooges = new ThreeStooges();
     threeStooges.stooges.add("1111");
     System.out.println(threeStooges.stooges);
+    Map<Integer,Integer>  map = new HashMap<>();
+    map.put(1,1);
   }
+
 }

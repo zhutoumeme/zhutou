@@ -1,4 +1,4 @@
-package cn.zyy.union.thread;
+package cn.cm.union.thread;
 
 import java.util.concurrent.CountDownLatch;
 

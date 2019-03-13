@@ -1,4 +1,4 @@
-package cn.zyy.union.thread;
+package cn.cm.union.thread;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;

@@ -1,14 +1,9 @@
-package cn.zyy.union.lock;
+package cn.cm.union.lock;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
-import org.apache.commons.lang3.StringUtils;
 
 public class Mutex implements Lock {
 

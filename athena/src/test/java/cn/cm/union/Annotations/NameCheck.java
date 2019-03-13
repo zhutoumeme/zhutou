@@ -1,4 +1,4 @@
-package cn.zyy.union.Annotations;
+package cn.cm.union.Annotations;
 
 import java.util.EnumSet;
 import javax.annotation.processing.Messager;

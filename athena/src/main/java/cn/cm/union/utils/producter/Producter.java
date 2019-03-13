@@ -1,4 +1,4 @@
-package cn.zyy.union.utils.producter;
+package cn.cm.union.utils.producter;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

@@ -1,11 +1,8 @@
-package cn.zyy.union.utils.producter;
+package cn.cm.union.utils.producter;
 
-import java.awt.geom.QuadCurve2D;
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.prefs.BackingStoreException;
 
 public class ProducerConsumerExample {
 

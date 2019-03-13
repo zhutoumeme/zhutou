@@ -1,4 +1,4 @@
-package cn.zyy.union.generic;
+package cn.cm.union.generic;
 
 import java.util.ArrayList;
 import java.util.List;

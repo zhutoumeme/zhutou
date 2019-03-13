@@ -1,6 +1,6 @@
-package cn.zyy.union.classloading;
+package cn.cm.union.classloading;
 
-import cn.zyy.union.DeadLoopClass;
+import cn.cm.union.DeadLoopClass;
 
 public class NotInitialization {
 

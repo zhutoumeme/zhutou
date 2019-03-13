@@ -1,13 +1,16 @@
-package cn.zyy.union.utils;
+package cn.cm.union.utils;
 
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public class SpringContextUtils implements ApplicationContextAware {
+public class SpringContextUtils implements ApplicationContextAware, BeanFactoryAware {
 
   private static ApplicationContext context;
+  private static BeanFactory beanFactory;
 
   public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
     context = applicationContext;
@@ -23,5 +26,17 @@ public class SpringContextUtils implements ApplicationContextAware {
 
   public static <T> T getBean(String name) {
     return (T) context.getBean(name);
+  }
+
+  @Override
+  public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+    beanFactory = beanFactory;
+  }
+
+  public static BeanFactory getBeanFactory() {
+    if (ObjectUtils.NULL == beanFactory) {
+      throw new IllegalStateException("beanFactory获取失败");
+    }
+    return beanFactory;
   }
 }

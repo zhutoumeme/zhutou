@@ -1,4 +1,4 @@
-package cn.zyy.union.classloading;
+package cn.cm.union.classloading;
 
 /**
  * 被动使用类字段演示一 通过子类引用父类静态字段，不会导致子类初始化</br>
