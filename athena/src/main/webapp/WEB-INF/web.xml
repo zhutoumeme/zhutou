@@ -73,4 +73,13 @@
     <session-timeout>15</session-timeout>
   </session-config>
 
+  <filter>
+    <filter-name>responseWrapperFilter</filter-name>
+    <filter-class>cn.cm.union.filter.ResponseWrapperFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>responseWrapperFilter</filter-name>
+    <url-pattern>/* </url-pattern>
+  </filter-mapping>
+
 </web-app>
