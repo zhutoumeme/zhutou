@@ -14,8 +14,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/athena/pom.xml" />
         <option value="$PROJECT_DIR$/angelina-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/angelina-parent/athena/pom.xml" />
       </list>
     </option>
   </component>
