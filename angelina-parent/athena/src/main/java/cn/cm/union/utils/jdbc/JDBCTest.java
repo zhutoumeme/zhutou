@@ -8,8 +8,9 @@ import java.sql.Statement;
 
 public class JDBCTest {
 
-  public static void main(String[] args) {
-
+  public static void main(String[] args) throws SQLException, ClassNotFoundException {
+    JDBCTest jdbcTest = new JDBCTest();
+    jdbcTest.test();
   }
 
   public void test() throws ClassNotFoundException, SQLException {
@@ -17,14 +18,14 @@ public class JDBCTest {
     Class.forName("com.mysql.jdbc.Driver");
 
     //2.建立链接
-    String url = "jdbc:mysql://localhost:3306/asdasd";
+    String url = "jdbc:mysql://localhost:3306/mysql";
     String user = "root";
-    String password = "asdasd889988";
+    String password = "ins234";
     Connection connection = DriverManager.getConnection(url, user, password);
     //3.创建语句
     Statement statement = connection.createStatement();
     //4.执行语句
-    ResultSet resultSet = statement.executeQuery("SELECT * FROM user_info ");
+    ResultSet resultSet = statement.executeQuery("SELECT * FROM user ");
     //5.处理结果
     while (resultSet.next()) {
       System.out.println(resultSet.getObject(1) + "/t" + resultSet.getObject(2));

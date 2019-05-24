@@ -1,5 +1,9 @@
 package cn.cm.union.utils.jdbc;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class PoolConfig {
 
   private String driver;
@@ -74,5 +78,18 @@ public class PoolConfig {
 
   public void setTimeOut(long timeOut) {
     this.timeOut = timeOut;
+  }
+
+  public static void main(String[] args)
+      throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
+    PoolConfig poolConfig = new PoolConfig();
+    Class clazz = poolConfig.getClass();
+    Method method  = clazz.getDeclaredMethod("setDriver",String.class);
+    method.invoke(poolConfig,"asdsadasd");
+    System.out.println(poolConfig.getDriver());
+    Field field = clazz.getDeclaredField("driver");
+    field.setAccessible(true);
+    field.set(poolConfig,"q3wed32rwd");
+    System.out.println(poolConfig.getDriver());
   }
 }

@@ -49,11 +49,7 @@ public class WaitNotify {
                 .format(new Date()));
         lock.notify();
         flag = false;
-        try {
-          TimeUnit.SECONDS.sleep(5);
-        } catch (InterruptedException e) {
-          e.printStackTrace();
-        }
+        //TimeUnit.SECONDS.sleep(5);
       }
       synchronized (lock) {
         System.out.println(
