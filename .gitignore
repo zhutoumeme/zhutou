@@ -1,13 +1,13 @@
 # building ignore
 target/
-*.jar
 *.war
 *.zip
 *.tar
 *.tar.gz
 node_modules
-**/WEB-INF/work/
-*.log.*
+
+**/WEB-INF/work
+
 # eclipse ignore
 .settings/
 .project
