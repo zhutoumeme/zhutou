@@ -1,0 +1,34 @@
+# maven ignore and other bundled files
+target/
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+*.launch
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+#jrebel ignore
+rebel.xml
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+*.springBeans
+
+# system ignore
+.DS_Store
+Thumbs.db

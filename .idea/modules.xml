@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/athena/athena.iml" filepath="$PROJECT_DIR$/athena/athena.iml" />
+      <module fileurl="file://$PROJECT_DIR$/angelina-parent/angelina-parent.iml" filepath="$PROJECT_DIR$/angelina-parent/angelina-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/angelina-parent/athena/athena.iml" filepath="$PROJECT_DIR$/angelina-parent/athena/athena.iml" />
     </modules>
   </component>
 </project>

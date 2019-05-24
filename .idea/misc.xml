@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="eclipseVersion" value="ECLIPSE_44" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1487819520788" />
+    <option name="importOrdering" value="ECLIPSE_44" />
+    <option name="name" value="default" />
+    <option name="pathToConfigFileJava" value="$APPLICATION_CONFIG_DIR$/eclipse-xyz.xml" />
+    <option name="selectedJavaProfile" value="springside" />
+    <option name="useOldEclipseJavaFormatter" value="true" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/athena/pom.xml" />
+        <option value="$PROJECT_DIR$/angelina-parent/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
