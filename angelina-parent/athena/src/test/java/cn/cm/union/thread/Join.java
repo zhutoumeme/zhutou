@@ -12,7 +12,7 @@ public class Join {
       preThread = demoThread;
     }
     TimeUnit.SECONDS.sleep(5);
-    System.out.println(Thread.currentThread().getName() + "terminate.");
+    System.out.println(Thread.currentThread().getName() + "terminate...");
   }
 
   static class Demo implements Runnable {

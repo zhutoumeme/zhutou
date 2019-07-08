@@ -49,7 +49,7 @@ public class WaitNotify {
                 .format(new Date()));
         lock.notify();
         flag = false;
-        //TimeUnit.SECONDS.sleep(5);
+          //TimeUnit.SECONDS.sleep(5);
       }
       synchronized (lock) {
         System.out.println(
