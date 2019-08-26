@@ -193,6 +193,13 @@
       <artifactId>commons-lang3</artifactId>
       <version>${commons.lang3.version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>${http.version}</version>
+    </dependency>
+
 
     <!--Spring test相关依赖-->
     <dependency>
