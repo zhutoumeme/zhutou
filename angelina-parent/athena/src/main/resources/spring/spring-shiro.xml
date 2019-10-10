@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!--自由授权类-->
+  <bean id="athenaRealm" class="cn.zyy.union.shiro.AthenaRealm"/>
+  <!--权限管理器-->
+  <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+    <property name="realm" ref="athenaRealm"/>
+  </bean>
+  <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+    <property name="securityManager" ref="securityManager"/>
+    <property name="loginUrl" value="/login.jsp"/>
+    <property name="unauthorizedUrl" value="/unauthorized.jsp"/>
+    <property name="filterChainDefinitions">
+      <value>
+        /login=anon
+        /**=anon
+      </value>
+    </property>
+
+  </bean>
+</beans>

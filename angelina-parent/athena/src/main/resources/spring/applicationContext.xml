@@ -8,6 +8,8 @@
 
   <!-- 加载配置参数 -->
   <import resource="classpath:spring/spring-mybatis.xml"/>
+  <!--shiro-->
+  <import resource="classpath:spring/spring-shiro.xml"/>
 
   <!-- 自动扫描 -->
   <!-- 自动扫描组件，要把controller去除，他们是在spring-mvc.xml中配置，如果不去除会影响事务管理。 -->
@@ -20,10 +22,10 @@
       expression="org.springframework.stereotype.Controller"/>
   </context:component-scan>
 
-  <bean id="springContextUtils" class="cn.cm.union.utils.SpringContextUtils" lazy-init="false"/>
+  <bean id="springContextUtils" class="cn.zyy.union.utils.SpringContextUtils" lazy-init="false"/>
 
-  <bean id="userInfo" class="cn.cm.union.utils.User" lazy-init="false"/>
-  <bean id="aop" class="cn.cm.union.utils.Aop" lazy-init="false"/>
+  <bean id="userInfo" class="cn.zyy.union.utils.User" lazy-init="false"/>
+  <bean id="aop" class="cn.zyy.union.utils.Aop" lazy-init="false"/>
 
   <!-- 开启aop注解方式 -->
   <aop:aspectj-autoproxy></aop:aspectj-autoproxy>

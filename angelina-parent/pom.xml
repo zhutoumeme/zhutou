@@ -7,6 +7,7 @@
     <artifactId>angelina-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>angelina</name>
+    <packaging>pom</packaging>
     <modules>
         <module>athena</module>
     </modules>
