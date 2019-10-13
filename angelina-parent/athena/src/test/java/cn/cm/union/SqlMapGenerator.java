@@ -15,7 +15,7 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 
 public class SqlMapGenerator {
     public static void main(String[] args) {
-        String genConProp = "C:\\workspace\\union\\athena\\src\\main\\resources\\mybatis\\generatorConfig.xml";
+        String genConProp = "D:\\Program Files\\Workspace\\union\\angelina-parent\\athena\\src\\main\\resources\\mybatis\\generatorConfig.xml";
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
 

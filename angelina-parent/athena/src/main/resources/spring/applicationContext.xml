@@ -17,7 +17,7 @@
   由于服务器启动时的加载配置文件的顺序为web.xml-》-root-context.xml(Spring的配置文件)-》servlet-context.xml(SpringMVC的配置文件)，
   由于 root-context.xml配置文件中Controller会先进行扫描装配，但是此时service还没有进行事务增强处理，得到的将是原样的Service（没有经过事务加强处理，故而没有事务处理能力）
   ，所以我们必须在root-context.xml中不扫描Controller，配置如下：-->
-  <context:component-scan base-package="cn.cm.union">
+  <context:component-scan base-package="cn.zyy.union">
     <context:exclude-filter type="annotation"
       expression="org.springframework.stereotype.Controller"/>
   </context:component-scan>

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 数据库驱动-->
-    <classPathEntry  location="D:\maven-repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar"/>
+    <classPathEntry  location="D:\Program Files\DevSoft\apache-maven-3.6.0\maven-repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar"/>
     <context id="DB2Tables"  targetRuntime="MyBatis3">
         <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
         <commentGenerator>
@@ -14,26 +14,27 @@
             <property name="addRemarkComments" value="true"/>
         </commentGenerator>
         <!--数据库链接URL，用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/zyy" userId="root" password="ZHU889988">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/mysql?serverTimezone=GMT%2B8" userId="root" password="ins1234">
         </jdbcConnection>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成模型的包名和位置-->
-        <javaModelGenerator targetPackage="cn.cm.union.pojo" targetProject="C:\workspace\union\athena\src\main\java">
+        <javaModelGenerator targetPackage="cn.zyy.union.pojo" targetProject="D:\Program Files\Workspace\union\angelina-parent\athena\src\main\java">
             <property name="enableSubPackages" value="true"/>
-            <property name="trimStrings" value="true"/>
+            <property name="trimStrings" value="false"/>
         </javaModelGenerator>
         <!-- 生成映射文件的包名和位置-->
-        <sqlMapGenerator targetPackage="mybatis.sqlmap" targetProject="C:\workspace\union\athena\src\main\resources">
+        <sqlMapGenerator targetPackage="mybatis.sqlmap" targetProject="D:\Program Files\Workspace\union\angelina-parent\athena\src\main\resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.cm.union.dao" targetProject="C:\workspace\union\athena\src\main\java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.zyy.union.dao" targetProject="D:\Program Files\Workspace\union\angelina-parent\athena\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
-        <table tableName="USER_INFO" domainObjectName="UserInfo"></table>
-        <table tableName="LOGIN_INFO" domainObjectName="LoginInfo"></table>
+        <table tableName="USER_LOGIN_INFO" domainObjectName="UserInfo">
+            <generatedKey column="LOGIN_ID" sqlStatement="MYSQL"/>
+        </table>
     </context>
 </generatorConfiguration>  
