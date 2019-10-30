@@ -11,11 +11,11 @@
   </bean>
   <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
     <property name="securityManager" ref="securityManager"/>
-    <property name="loginUrl" value="/login.jsp"/>
-    <property name="unauthorizedUrl" value="/unauthorized.jsp"/>
+    <property name="loginUrl" value="/login/out"/>
+    <property name="unauthorizedUrl" value="/login/unauthorized"/>
     <property name="filterChainDefinitions">
       <value>
-        /login=anon
+        /user/**=user
         /**=anon
       </value>
     </property>

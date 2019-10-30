@@ -1,5 +1,6 @@
-package cn.zyy.union.controller;
+package cn.zyy.union.user.controller;
 
+import org.apache.shiro.authz.annotation.RequiresUser;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/user")
 public class UserController {
 
+  @RequiresUser
   @RequestMapping("/info")
   public String getuserInfo() {
     return "index";
